@@ -51,6 +51,8 @@ main .header .logo {
 
 main .header nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2.813rem;
 }
 
@@ -63,6 +65,14 @@ main .header nav a {
 
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+main .header nav article {
+  background: var(--btn-color);
+  color: var(--bg-color);
+  padding: 0.75rem 1.688rem;
+  
+  border-radius: 50px;
 }
 
 main .header nav a::before {
@@ -79,6 +89,12 @@ main .header nav a:hover {
   color: var(--btn-color);
 } 
 
+main .header nav article:hover {
+  /* opacity: 0.2; */
+  /* background: var(--bg-color); */
+  /* color: var(--title-color); */
+  filter: brightness(75%);
+}
 /* banner */
 main .banner {
   display: flex;
@@ -173,15 +189,15 @@ main .about .text {
 }
 
 
-/* experiencie */
-main .experience {
-  /* border: 1px solid midnightblue; */
+/* experiencie
+ main .experience {
+  /* border: 1px solid midnightblue;
   padding-bottom: 7.875rem;
 }
 
 main .experience .cards-experiences {
   /* border: 1px solid chocolate; */
-  /* height: 80vw; */
+  /* height: 80vw; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,12 +208,12 @@ main .experience .cards-experiences {
 main .experience .cards-experiences .experience-item {
   border: 1px solid #333;
   background: var(--bg-card-project-color);
-  /* margin-left: 2rem; */
+  /* margin-left: 2rem; 
   padding: 0 3rem 2rem 3rem;
   position: relative;
 }
 
-/* main .experience .cards-experiences .experience-item img {
+ main .experience .cards-experiences .experience-item img {
   position: absolute;
   top: 0;
   left: -1.8rem; /*-2.5rem
@@ -209,7 +225,7 @@ main .experience .cards-experiences .experience-item {
   font-size: 8px;
   color: white;
   background: var(--btn-color);
-} */
+} 
 
 main .experience .cards-experiences .experience-item .content {
   border-radius: 0.5rem;
@@ -217,7 +233,7 @@ main .experience .cards-experiences .experience-item .content {
   border-left: 2rem; 
 }
 
-/* nome empresa e ano*/
+/* nome empresa e ano
 main .experience .cards-experiences .experience-item .content .title-subtitle {
   display: flex;
   justify-content: space-between;
@@ -239,7 +255,8 @@ main .experience .cards-experiences .experience-item .content h3 {
   font-size: 1.125rem;
   color: white;
   padding: 1rem 0;
-}
+} */
+
 /* Projetos */
 main .projects {
   padding-bottom: 7.875rem;
@@ -384,24 +401,3 @@ main .my-skills .cards-skills .card-skill .icons-ions {
   color: var(--btn-color); 
   font-size: 64px;
 }
-
-
-/* medias queries **/
-/* 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 75%;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-   
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 50%;
-  }
-} */
