@@ -54,6 +54,7 @@ main .header nav {
   justify-content: center;
   align-items: center;
   gap: 2.813rem;
+  
 }
 
 main .header nav a {
@@ -63,11 +64,11 @@ main .header nav a {
   position: relative;
   text-decoration: none;
 
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  /* -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 
-main .header nav article {
+main .header nav  article {
   background: var(--btn-color);
   color: var(--bg-color);
   padding: 0.75rem 1.688rem;
@@ -92,8 +93,7 @@ main .header nav a:hover {
 main .header nav article:hover {
   /* opacity: 0.2; */
   /* background: var(--bg-color); */
-  /* color: var(--title-color); */
-  filter: brightness(75%);
+  background-color: var(--title-color);
 }
 /* banner */
 main .banner {
@@ -188,81 +188,11 @@ main .about .text {
   color: var(--subtitle-color);
 }
 
-
-/* experiencie
- main .experience {
-  /* border: 1px solid midnightblue;
-  padding-bottom: 7.875rem;
-}
-
-main .experience .cards-experiences {
-  /* border: 1px solid chocolate; */
-  /* height: 80vw; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-main .experience .cards-experiences .experience-item {
-  border: 1px solid #333;
-  background: var(--bg-card-project-color);
-  /* margin-left: 2rem; 
-  padding: 0 3rem 2rem 3rem;
-  position: relative;
-}
-
- main .experience .cards-experiences .experience-item img {
-  position: absolute;
-  top: 0;
-  left: -1.8rem; /*-2.5rem
-  height: 3.4rem;
-  width: 3.4rem;  /*5 rem 
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 8px;
-  color: white;
-  background: var(--btn-color);
-} 
-
-main .experience .cards-experiences .experience-item .content {
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border-left: 2rem; 
-}
-
-/* nome empresa e ano
-main .experience .cards-experiences .experience-item .content .title-subtitle {
-  display: flex;
-  justify-content: space-between;
-} 
-
-main .experience .cards-experiences .experience-item .content .title-subtitle h2 {
-  color: white;
-}
-
-main .experience .cards-experiences .experience-item .content .title-subtitle span {
-  background: var(--btn-color);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  font-size: 0.8rem;
-  border-radius: 50rem;
-}
-
-main .experience .cards-experiences .experience-item .content h3 {
-  font-size: 1.125rem;
-  color: white;
-  padding: 1rem 0;
-} */
-
 /* Projetos */
 main .projects {
   padding-bottom: 7.875rem;
 }
 
-/* 
 main .projects .title {
   text-align: center;
   width: 100%;
@@ -271,7 +201,8 @@ main .projects .title {
   color: var(--title-color);
   line-height: normal;
   margin-bottom: 1.875rem;
-} */
+  text-decoration: none;
+}
 
 main .projects .cards-projects {
   display: flex;
@@ -313,6 +244,7 @@ main .projects .cards-projects .card-project .infos .title {
   line-height: 1.5rem;
   text-align: left;
   margin-bottom: 0;
+  
 }
 
 main .projects .cards-projects .card-project .infos .technologies {
